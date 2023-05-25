@@ -11,11 +11,24 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>OpenAI Application</title>
+    <title>OpenAI Summarize Application</title>
   </head>
   <body>
-    <h1>Hello World!!!!</h1>
-    <p>👋</p>
+    <h1>Summarize for 2nd Grader</h1>
+
+    <div>
+      <form id="from_sentences">
+        <label for="fname">Sentences:</label><br>
+        <textarea name="sentences" rows="10"></textarea><br>
+        <input type="submit" value="submit"><br>
+      </form>
+      <br>
+      <div>
+        <label for="sentences_summarized">Summarized:</label><br>
+        <textarea id="sentences_summarized" rows="8" readonly></textarea>
+      </div>
+    </div>
+
     <p id="info"></p>
   </body>
   <script src="./js/renderer.js"></script>
